@@ -21,7 +21,7 @@ h3 {
   color: #942192;
   border-bottom: 2px solid #942192;
   padding-bottom: 3px;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 h4 {
@@ -88,12 +88,16 @@ ul {
 .grid {
   display: flex;
   flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .grid-box {
-  flex: 1;
-  background: #fefefe;
-  border-radius: 6px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  width: 49%;
+  padding: 40px 0;
 }
 
 .icon.big {
