@@ -111,7 +111,7 @@ a:hover { text-decoration: underline; }
   flex: 1;
 }
 
-.medium { font-size: 700%; }
+.medium { font-size: 600%; }
 .big { font-size: 1000%; }
 
 #expertise figure {
