@@ -161,6 +161,38 @@ a.no-underline:hover { text-decoration: none; }
   font-size: 130%;
 }
 
+.contact {
+  margin: 50px 0;
+}
+
+.contact-btn {
+  display: flex;
+  border: 1px solid #bef264;
+  opacity: 0.9;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.contact-btn:hover {
+  text-decoration: none;
+  opacity: 1;
+  box-shadow: 5px 5px #bef264;
+}
+
+.contact-btn span.icon {
+  margin-left: 25px;
+}
+
+.contact-btn span.label {
+  text-align: center;
+  flex-grow: 1;
+}
+
 .plainlist {
   padding: 0 10px;
 }
