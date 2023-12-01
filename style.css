@@ -1,3 +1,23 @@
+/* source-sans-3-latin-wght-normal */
+@font-face {
+  font-family: 'Source Sans 3 Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/source-sans-3:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* inconsolata-latin-wght-normal */
+@font-face {
+  font-family: 'Inconsolata Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/inconsolata:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,35 +26,40 @@
 
 body {
   color: #383838;
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'Source Sans 3 Variable', Arial, sans-serif;
   line-height: 1.325;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.25em;
+  background-color: #f3f4f6AA;
   -webkit-font-smoothing: antialiased;
 }
 
-h1 { font-size: 250%; }
-h2 { font-size: 200%; }
+h1 {
+  font-size: 300%;
+  font-weight: 900;
+}
+
+h2 { font-size: 230%; }
 
 h3 {
-  font-size: 150%;
-  color: #db5855;
-  border-bottom: 2px solid #db5855;
+  font-size: 180%;
+  color: #475569;
+  border-bottom: 2px solid #475569;
   padding-bottom: 3px;
-  margin: 20px 0;
+  margin: 1em 0;
 }
 
 h4 {
-  font-size: 110%;
-  color: #db5855;
+  font-size: 130%;
+  color: #475569;
 }
 
 h3:before {
-  content: '> ';
+/*  content: '> ';*/
 }
 
 header {
-  background: linear-gradient(#db5855, #db5855);
+  background: black; /* linear-gradient(#475569, #475569);*/
   color: white;
   padding-top: 75px;
   margin-bottom: 100px;
@@ -45,7 +70,7 @@ ul {
 }
 
 a, a:visited {
-  color: #db5855;
+  color: #475569;
   text-decoration: none;
 }
 
@@ -55,6 +80,10 @@ a.no-underline:hover { text-decoration: none; }
 .centered {
   margin: 0 auto;
   text-align: center;
+}
+
+.monospaced {
+  font-family: 'Inconsolata Variable', monospace, sans-serif;
 }
 
 #face {
@@ -106,48 +135,29 @@ a.no-underline:hover { text-decoration: none; }
 
 #leadin {
   padding: 5% 10%;
-  font-size: 130%;
+  font-size: 160%;
   text-align: center;
+  font-weight: 700;
+  margin-bottom: 10rem;
 }
 
-#expertise .grid-box {
-  background: #f7f7f7;
-  border-radius: 8px;
-  padding: 40px 0;
-  flex-grow: 1;
+.grid-box {
+  background: white;
+  padding: 1.5rem;
   flex: 1;
   margin: 0 10px;
-}
-
-#help .grid-box {
-  padding: 40px 20px;
-  flex: 1;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border-bottom-width: 5px;
+  border-bottom-color: #bef264;
+  border-bottom-style: solid;
 }
 
 .medium { font-size: 600%; }
 .big { font-size: 1000%; }
 
-#expertise figure {
-  text-align: center;
-}
-
-#expertise figure i {
-  display: block;
-}
-
-#expertise figure figcaption {
-  display: block;
-  font-size: 140%;
-  padding: 20px 0;
-}
-
-#expertise li {
-  text-align: center;
-  padding: 3px 0;
-}
-
-#help figure {
-  margin: 30px 0;
+#expertise p {
+  margin: 0 10px 10px 10px;
+  font-size: 130%;
 }
 
 .plainlist {
@@ -156,10 +166,37 @@ a.no-underline:hover { text-decoration: none; }
 
 .plainlist li {
   margin: 15px 0;
+  padding: 1rem 20px;
+  border-left-width: 10px;
+  border-left-color: #bef264;
+  border-left-style: solid;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.tech-list {
+  font-size: 80%;
+  margin: 20px 0;
+  color: black;
+}
+
+.tech-list::before {
+  content: 'Technology used:';
+  background-color: #475569;
+  font-weight: 900;
+  color: white;
+  padding: 10px;
+  border-radius: 0 50px 50px 0;
+  margin-right: 10px;
+}
+
+.time-spent {
+  font-size: 85%;
+  color: #1e1e12;
 }
 
 footer {
-  background-color: #db5855;
+  background-color: #475569;
   padding: 50px 0;
   margin-top: 150px;
   color: white;
@@ -180,6 +217,10 @@ footer a {
   bottom: 2px;
 }
 
+.tech-icon {
+  width: 200px;
+}
+
 .icon-small {
   height: 1em;
   position: relative;
@@ -188,13 +229,25 @@ footer a {
   left: -4px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1000px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .container {
+    width: 96%;
+    margin: 0 auto;
+  }
+
   .grid {
     flex-direction: column;
   }
 
-  #help .grid-box, #expertise .grid-box {
-    width: 100%;
-    margin-bottom: 20px;
+  .grid-box {
+    margin: 0;
   }
+}
+
+@media (max-width: 500px) {
+  
 }

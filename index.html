@@ -14,81 +14,44 @@
     <meta property="og:type" content="blog">
     <meta property="og:description" content="Mike Timofiiv - Multi-disciplined Javascript developer">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
   </head>
   <body>
     <header>
-      <h1 class="centered">Mike Timofiiv</h1>
-      <h2 class="centered">Multi-disciplined Javascript developer <span class="cursor"></span></h2>
+      <h1 class="centered monospaced">Mike Timofiiv</h1>
+      <h2 class="centered monospaced">Multi-disciplined developer <span class="cursor"></span></h2>
 
       <div class="centered" id="face"></div>
     </header>
     <div class="container">
       <section id="leadin">
-        <p>I am a Javascript developer, and I've been working on the web professionally for over 10 years. I'm passionate about UX and technology in and would love to help you with your project.</p>
+        <p>
+          I've been working in web and mobile development for over 12 years. I would love to help you with whatever challenge you've got.
+        </p>
       </section>
       <section id="expertise">
-        <h3>Expertise</h3>
+        <h3>About</h3>
 
-        <div class="grid">
-          <div class="grid-box">
-            <ul>
-              <figure>
-                <i data-feather="chrome" color="#ffafaf" height="25%" width="25%"></i>
-                <figcaption>Web</figcaption>
-              </figure>
-              <li>React &amp; Vue.js webapps</li>
-            </ul>
-          </div>
-          <div class="grid-box">
-            <figure>
-              <i data-feather="smartphone" color="#ffafaf" height="25%" width="25%"></i>
-              <figcaption>Mobile</figcaption>
-            </figure>
-            <ul class="details">
-              <li>React Native cross-platform mobile apps</li>
-            </ul>
-          </div>
-          <div class="grid-box">
-            <figure>
-              <i data-feather="server" color="#ffafaf" height="25%" width="25%"></i>
-              <figcaption>API</figcaption>
-            </figure>
-            <ul class="details">
-              <li>Secure APIs – REST &amp; GraphQL</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="help">
-        <h3>How I can help you</h3>
+        <p>
+          My name is Mike Timofiiv. I'm a developer/engineer working mostly on web and mobile projects. I'm currently based in Bangkok, Thailand, but most of my work is remote.
+        </p>
 
-        <div class="grid">
-          <div class="grid-box">
-            <h4 class="centered">Rapid Prototyping</h4>
-            <figure class="centered medium">
-              <i data-feather="sunrise" color="#f7ce02" height="25%" width="25%"></i>
-            </figure>
-            <p class="centered">Quick proof-of-concepts to help validate your idea.</p>
-          </div>
-          <div class="grid-box">
-            <h4 class="centered">Architectural planning</h4>
-            <figure class="centered medium">
-              <i data-feather="layers" color="#23aeff" height="25%" width="25%"></i>
-            </figure>
-            <p class="centered">A small amount of thought, planning and mapping goes a long way. Make sure you're not building a tower of Babel.</p>
-          </div>
-          <div class="grid-box">
-            <h4 class="centered">Quality crafted code</h4>
-            <figure class="centered medium">
-              <i data-feather="code" color="#06d69b" height="25%" width="25%"></i>
-            </figure>
-            <p class="centered">Be sure you will get a working, efficient application built correctly and with maintainability in mind.</p>
-          </div>
+        <p>
+          I'm passionate about fitness (running, parkour, muay thai), making video documentaries on Youtube and <a href="https://www.thebrokebackpacker.com/slow-travel/">slow-travelling the world</a>.
+        </p>
+
+        <p>
+          Currently, I am working with several freelance clients to build and maintain their applications. Additionally, I love building my own apps for various things that align with my interests and ethics. My preferred stack is Ruby/Ruby on Rails, but I've also got a lot of Javascript/Node.js work under my belt.
+        </p>
+
+        <p>
+          If you're a business person looking to get started on an app or web development project with a web developer, a developer looking to collaborate on something cool, or just wanting to say hi, and let's talk about it.
+        </p>
+
+        <div>
         </div>
       </section>
       <section id="work">
@@ -96,10 +59,20 @@
 
         <ul class="plainlist">
           <li>
+            <h4><a href="https://recipeer.app?ref=fiiv_dev">Recipeer (in progress)</a></h4>
+            <p>A collaborative platform to find, share, remix and collect amazing recipes.</p>
+            <p class="tech-list monospaced">PostgreSQL, Redis, Ruby on Rails, Stimulus, StimulusReflex, Docker, Tailwind</p>
+            <p class="italic time-spent">
+              <i class="icon-small" data-feather="clock" color="#797979"></i>
+              1+ months work
+            </p>
+          </li>
+          <li>
             <h4><a href="https://icon.horse?ref=fiiv_dev">Icon Horse</a></h4>
             <p>A web service to get bulletproof favicons for any website, even if it's unreachable or has no icon!</p>
-            <p>Used PostgreSQL, Redis, Node.js, React, Next.js, Tailwind</p>
-            <p class="padded italic">
+            <p>This project has been sold to <a href="https://thirdsouth.capital">Third South Capital</a>.</p>
+            <p class="tech-list monospaced">PostgreSQL, Redis, Node.js, React, Next.js, Docker, Tailwind</p>
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="clock" color="#797979"></i>
               2 months work
             </p>
@@ -107,35 +80,26 @@
           <li>
             <h4><a href="https://30wears.app?ref=fiiv_dev">30 Wears</a></h4>
             <p>An app I built for the <a href="https://fixathon.io">Fixathon</a> centered around the <a href="https://www.instagram.com/explore/tags/30wearschallenge/">#30wearschallenge</a> – a way to get people to wear their clothes more, reducing waste and over-production in the garment industry.</p>
-            <p>Used PostgreSQL, Node.js, ReactNative, Expo</p>
-            <p class="padded italic">
+            <p class="tech-list monospaced">PostgreSQL, Node.js, ReactNative, Expo</p>
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="clock" color="#797979"></i>
               2 months work
             </p>
           </li>
           <li>
-            <h4><a href="https://blogsend.io?ref=fiiv_dev">Blogsend.io</a></h4>
-            <p>An MVP I built where a blog's RSS feed can be turned into quality emails to a list of email subscribers, automatically when new posts are detected.</p>
-            <p>Used PostgreSQL, Node.js, RSS</p>
-            <p class="padded italic">
-              <i class="icon-small" data-feather="clock" color="#797979"></i>
-              1 month work
-            </p>
-          </li>
-          <li>
             <h4>FlexDB</h4>
             <p>TNO uses sensors to detect vehicle emissions during drives (such as CO<sub>2</sub> emissions) as part of the <a href="https://www.tno.nl/en/focus-areas/traffic-transport/roadmaps/sustainable-traffic-and-transport/sustainable-mobility-and-logistics/improving-air-quality-by-monitoring-real-world-emissions/measuring-real-world-emissions-with-tno-s-smart-emissions-measurement-system-sems/">SEMS project</a>. The client needed a flexible system that could gather, store and rapidly index millions of rows of data in real-time. The solution I built is now being used not just in the SEMS project but in several other sensor-based systems as well (like locomotives).</p>
-            <p>Used PostgreSQL, Node.js, Python</p>
-            <p class="padded italic">
+            <p class="tech-list monospaced">PostgreSQL, Node.js</p>
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="clock" color="#797979"></i>
               3+ months work
             </p>
           </li>
           <li>
-            <h4><a href="https://meetingcanary.app?ref=fiiv_dev">Meeting Canary (in progress)</a></h4>
+            <h4><a href="https://meetingcanary.app?ref=fiiv_dev">Meeting Canary (on hold)</a></h4>
             <p>Making meetings work for us again! Have more productive meetings and make sure their attendees stay accountable and productive afterwards.</p>
-            <p>Used Alpine.js, Node.js, PostgreSQL</p>
-            <p class="padded italic">
+            <p class="tech-list monospaced">Alpine.js, Node.js, PostgreSQL</p>
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="clock" color="#797979"></i>
               2+ months work
             </p>
@@ -143,8 +107,8 @@
           <li>
             <h4>Bouwlogistiek Dashboard</h4>
             <p>The construction industry in Netherlands is trying to fix their own ecological imprint – this dashobard helps them and municipalities show their progress reducing emissions in real time.</p>
-            <p>Used PostgreSQL, Redis, Node.js, Vue.js, VueX</p>
-            <p class="padded italic">
+            <p class="tech-list monospaced">PostgreSQL, Redis, Node.js, Vue.js, VueX</p>
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="clock" color="#797979"></i>
               3 months work
             </p>
@@ -152,8 +116,8 @@
           <li>
             <h4>Heineken</h4>
             <p>A mobile (iOS and Android) app that pairs with an "internet of things" device and allows for purchasing and delivery of beer.</p>
-            <p>Used ReactNative, Redux</p>
-            <p class="padded italic">
+            <p class="tech-list monospaced">ReactNative, Redux</p>
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="clock" color="#797979"></i>
               2 months work
             </p>
@@ -167,19 +131,19 @@
           <li>
             <h4><a href="https://membergetmember.co">Member Get Member Company</a></h4>
             <p class="padded">A small startup in the heart of Amsterdam, MGMCo's product is a referral marketing platform.</p>
-            <p><strong>Product Manager</strong> – I am currently in charge of designing a product for a previously unexplored ecommerce market.</p>
+            <p><strong>Product Manager</strong> – In charge of designing a product for a previously unexplored ecommerce market.</p>
             <p><strong>Tech Lead</strong> – setting the technical vision for the company.</p>
             <p><strong>Backend Developer</strong> – building and maintaining the various Node.js APIs and microservices used by the company.</p>
-            <p class="padded italic">
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="calendar" color="#797979"></i>
-              September 2014 – Current
+              September 2014 – 2018
             </p>
           </li>
           <li>
             <h4><a href="https://canucks.com">Canucks Sports &amp; Entertainment</a></h4>
             <p class="padded">The Vancouver Canucks are a premier professional sports (ice hockey) franchise in Vancouver, part of the National Hockey League.</p>
             <p><strong>Full Stack Developer</strong> – I used to run campaigns and manage the entire web presence from the technical side for the sports team.</p>
-            <p class="padded italic">
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="calendar" color="#797979"></i>
               February 2011 – July 2014
             </p>
@@ -188,9 +152,34 @@
             <h4><a href="https://noomii.com">Noomii</a></h4>
             <p class="padded">Noomii is a startup in Vancouver, Canada focusing on matching life coaches with clients.</p>
             <p><strong>Designer + Frontend Developer</strong> – I worked on designing and implementing the brand and look and feel on the product's website.</p>
-            <p class="padded italic">
+            <p class="italic time-spent">
               <i class="icon-small" data-feather="calendar" color="#797979"></i>
               November 2010 – February 2011
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="work">
+        <h3>Project graveyard</h3>
+
+        <ul class="plainlist">
+          <li>
+            <h4><a href="https://web.archive.org/web/20210128030134/http://blogsend.io/">Blogsend.io</a></h4>
+            <p>An MVP I built where a blog's RSS feed can be turned into quality emails to a list of email subscribers, automatically when new posts are detected.</p>
+            <p>It failed to find a product market fit and I discontinued it.</p>
+            <p class="tech-list monospaced">PostgreSQL, Node.js, RSS</p>
+            <p class="italic time-spent">
+              <i class="icon-small" data-feather="clock" color="#797979"></i>
+              1 month work
+            </p>
+          </li>
+          <li>
+            <h4><a href="https://pinmark.io?ref=fiiv_dev">Pinmark.io</a></h4>
+            <p>An iOS/Android app to save lists of geographic locations.</p>
+            <p class="tech-list monospaced">ReactNative, PostgreSQL, Node.js</p>
+            <p class="italic time-spent">
+              <i class="icon-small" data-feather="clock" color="#797979"></i>
+              3+ months work
             </p>
           </li>
         </ul>
@@ -201,7 +190,7 @@
         <ul class="plainlist">
           <li>
             <h4><a href="https://frameworkless.js.org?ref=fiiv_dev">Frameworkless.js</a></h4>
-            <p>I created and taught a Node.js Javascript course on live stream – replays of the lessons available forever :)</p>
+            <p>I created and taught a Node.js Javascript course on live stream – replays of the lessons available forever. The materials are a little out-dated these days, but still teach how to build an HTTP server in Node from scratch.</p>
           </li>
           <li>
             <h4>Teaching at New York Code &amp; Design Academy</h4>
